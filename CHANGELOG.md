@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.10.0 (2026-02-23)
+
+### Added
+- **Rovo Dev CLI adapter** (`adapters/rovodev.sh`) — translates Rovo Dev event hooks (`on_complete`, `on_error`, `on_tool_permission`) into CESP categories for peon-ping sound playback. Argument-based (not stdin), matching Rovo Dev's shell command hook model.
+- **Rovo Dev CLI auto-registration** — `install.sh` detects `~/.rovodev/config.yml` and automatically appends `eventHooks` configuration, so `peon-ping-setup` just works for Rovo Dev users.
+
 ## v2.9.0 (2026-02-21)
 
 ### Added
